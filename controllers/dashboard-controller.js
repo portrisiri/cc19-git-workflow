@@ -13,3 +13,11 @@ const updateDashboard = async (req, res, next) => {
     next(error);
   }
 };
+
+const deleteDashboard = async (req, res, next) => {
+  try {
+    res.json({ message: 'Delete' });
+  } catch (error) {
+    next(error);
+  }
+};
