@@ -21,3 +21,11 @@ const deleteDashboard = async (req, res, next) => {
     next(error);
   }
 };
+
+const duplicateDashboard = async (req, res, next) => {
+  try {
+    res.json({ message: 'Duplicate' });
+  } catch (error) {
+    next(error);
+  }
+};
